@@ -3,11 +3,12 @@
 <body>
 <?php
  $x=5;
- function add($y) {
-    global $x;
+ $y=10;
+ function add($x,$y) {
+    global $x,$y;
     return $x+$y;
  }
- echo "$x+5 is", add (5);
+ echo "$x+$y is", add (10,5);
  ?>
  </body>
  </html>
